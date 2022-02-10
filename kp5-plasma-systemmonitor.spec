@@ -1,16 +1,16 @@
-%define		kdeplasmaver	5.23.5
+%define		kdeplasmaver	5.24.0
 %define		qtver		5.9.0
 %define		kpname		plasma-systemmonitor
 %define		kf5ver		5.39.0
 
 Summary:	plasma-systemmonitor
 Name:		kp5-%{kpname}
-Version:	5.23.5
+Version:	5.24.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	e525ff16003e0634d9b6277c35b7133f
+# Source0-md5:	886d89f75a6ba9324586154816a9bcef
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= 5.15.0
@@ -84,3 +84,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable
 %{_datadir}/ksysguard/sensorfaces/org.kde.ksysguard.processtable
 %{_datadir}/plasma-systemmonitor
+%dir %{_datadir}/plasma/kinfocenter/externalmodules
+%{_datadir}/plasma/kinfocenter/externalmodules/kcm_external_plasma-systemmonitor.desktop
