@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.26.4
+%define		kdeplasmaver	5.26.5
 %define		qtver		5.15.2
 %define		kpname		plasma-systemmonitor
 %define		kf5ver		5.39.0
 
 Summary:	plasma-systemmonitor
 Name:		kp5-%{kpname}
-Version:	5.26.4
+Version:	5.26.5
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	a7614d882e4ea34682fbba713434ee94
+# Source0-md5:	d5c8bac2d756982328cd541649a7002b
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= 5.15.0
