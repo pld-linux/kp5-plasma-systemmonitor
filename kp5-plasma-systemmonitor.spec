@@ -9,7 +9,7 @@
 Summary:	plasma-systemmonitor
 Name:		kp5-%{kpname}
 Version:	5.27.5
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -92,6 +92,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable
 %{_datadir}/ksysguard/sensorfaces/org.kde.ksysguard.processtable
 %{_datadir}/plasma-systemmonitor
+%dir %{_datadir}/plasma/kinfocenter
 %dir %{_datadir}/plasma/kinfocenter/externalmodules
 %{_datadir}/plasma/kinfocenter/externalmodules/kcm_external_plasma-systemmonitor.desktop
 %{_datadir}/metainfo/org.kde.plasma-systemmonitor.metainfo.xml
